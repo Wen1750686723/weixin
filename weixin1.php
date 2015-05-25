@@ -1,56 +1,56 @@
-<?php
+ï»¿<?php
 $access_token = "ouWdNaf-T6p0E6rZiHOu_-AENNtf1ulLBnyAurHLKWNwKD-zMcCL9VUlRzsl-ieiQoqlGZD7rnxDpahBzDdPvS1pt5UMfeWOsTDZdW5VxDM";
 
 $jsonmenu = '{
       "button":[
       {
-            "name":"ÌìÆøÔ¤±¨",
+            "name":"å¤©æ°”é¢„æŠ¥",
            "sub_button":[
             {
                "type":"click",
-               "name":"±±¾©ÌìÆø",
-               "key":"ÌìÆø±±¾©"
+               "name":"åŒ—äº¬å¤©æ°”",
+               "key":"å¤©æ°”åŒ—äº¬"
             },
             {
                "type":"click",
-               "name":"ÉÏº£ÌìÆø",
-               "key":"ÌìÆøÉÏº£"
+               "name":"ä¸Šæµ·å¤©æ°”",
+               "key":"å¤©æ°”ä¸Šæµ·"
             },
             {
                "type":"click",
-               "name":"¹ãÖÝÌìÆø",
-               "key":"ÌìÆø¹ãÖÝ"
+               "name":"å¹¿å·žå¤©æ°”",
+               "key":"å¤©æ°”å¹¿å·ž"
             },
             {
                "type":"click",
-               "name":"ÉîÛÚÌìÆø",
-               "key":"ÌìÆøÉîÛÚ"
+               "name":"æ·±åœ³å¤©æ°”",
+               "key":"å¤©æ°”æ·±åœ³"
             },
             {
                 "type":"view",
-                "name":"±¾µØÌìÆø",
+                "name":"æœ¬åœ°å¤©æ°”",
                 "url":"http://m.hao123.com/a/tianqi"
             }]
       
 
        },
        {
-           "name":"wenbo¹¤×÷ÊÒ",
+           "name":"wenboå·¥ä½œå®¤",
            "sub_button":[
             {
                "type":"click",
-               "name":"¹«Ë¾¼ò½é",
+               "name":"å…¬å¸ç®€ä»‹",
                "key":"company"
             },
             {
                "type":"click",
-               "name":"È¤Î¶ÓÎÏ·",
-               "key":"ÓÎÏ·"
+               "name":"è¶£å‘³æ¸¸æˆ",
+               "key":"æ¸¸æˆ"
             },
             {
                 "type":"click",
-                "name":"½²¸öÐ¦»°",
-                "key":"Ð¦»°"
+                "name":"è®²ä¸ªç¬‘è¯",
+                "key":"ç¬‘è¯"
             }]
        
 
