@@ -1,34 +1,14 @@
 <?php
-$access_token = "nX-8aX8727PvJSAAIYhiMeKbzCXRr8DOQ60ShfHxOAhidB28DFdoFnN4qwxinfAKaIeigV2u49U61oKYq5wvAlHLW3jDB858ofqsRPzjKlg";
-
-$jsonmenu = '{
-   "articles": [
-         {
-                        "thumb_media_id":"1.png",
-                        "author":"xxx",
-             "title":"Happy Day",
-             "content_source_url":"www.qq.com",
-             "content":"content",
-             "digest":"digest",
-                        "show_cover_pic":"0"
-         },
-         {
-                        "thumb_media_id":"",
-                        "author":"xxx",
-             "title":"Happy Day",
-             "content_source_url":"www.qq.com",
-             "content":"content",
-             "digest":"digest",
-                        "show_cover_pic":"0"
-         }
-   ]
-}';
+$access_token = "Te8pbjQEYlVVXXuiGIkZEgV6gs2_9FfD5VjScBUzx1rCI-lt4ejB_JtJdFyoCEqH9c1Ab35Cjt3iXcth5h4SLWf1SSVWE6jO2HtiZdOi6Bg";
 
 
-$url = "https://api.weixin.qq.com/cgi-bin/material/add_news?access_token=".$access_token;
-$result = https_request($url, $jsonmenu);
-var_dump($result);
-
+$type="image";
+$filepath=dirname(__FILE__)."/1.jpg";
+echo $filepath;
+$filedata=array("media" => "@".$filepath);
+$url="https://api.weixin.qq.com/cgi-bin/media/upload?access_token=$access_token&type=$type";
+$res=https_request($url,$filedata);
+var_dump($res);
 function https_request($url,$data = null){
     $curl = curl_init();
     curl_setopt($curl, CURLOPT_URL, $url);
